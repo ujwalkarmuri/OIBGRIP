@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+:root{
+	--font: 'Roboto', sans-serif;
+	--primary-color: #d35400;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font);
+}
+header{
+	background: linear-gradient(130deg,#16a085 50%,#2c3e50 50%);
+	height: 100vh;
+}
+header nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+}
+header nav .logo{
+	height: 90%;
+}
+header nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header nav ul a{
+	color: #fff;
+	text-decoration: none;
+	margin: 0 1rem;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+header nav ul a:hover{
+	color: var(--primary-color);
+}
+header nav ul li{
+	list-style: none;
+}
+header nav .icon i{
+	color: #fff;
+	margin: 0 1rem;
+	cursor: pointer;
+}
+header nav .icon i:hover{
+	color: var(--primary-color);
+}
+.banner{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.banner .intro h1{
+	color: #fff;
+	font-size: 52px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.banner .intro h1 span{
+	color: var(--primary-color);
+}
+.banner .intro div{
+	margin-bottom: 1.5rem;
+}
+.banner .intro .btn{
+	text-decoration: none;
+	padding: .8rem 1rem;
+	border: 1px solid var(--primary-color);
+	color: #fff;
+	background: var(--primary-color);
+	transition: .3s;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.banner .intro .btn:hover{
+	letter-spacing: 2.5px;
+}
+.banner img{
+	height: 450px;
+	width: 450px;
+}
+.social-icon{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 32%;
+	right: 3%;
+}
+.social-icon a{
+	text-decoration: none;
+	padding: 10px;
+	color: #fff;
+	margin: .2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+}
+.social-icon a i{
+	font-size: 25px;
+}
+.social-icon .fb-icon{
+	background: #4267B2;
+}
+.social-icon .yt-icon{
+	background: #FF0000;
+}
+.social-icon .wp-icon{
+	background: #075E54;
+}
+.social-icon a:hover{
+	background: var(--primary-color);
+}
